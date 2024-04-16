@@ -1,0 +1,19 @@
+<section class="contact my-5">
+    <app-star [title]="'contact section'" [customColor]="'#2C3E50'"></app-star>
+
+    <form action="" class="w-50 mx-auto mt-4">
+        <!-- User Name -->
+        <label for="userName" class="position-relative __top top-0" [class.__top]="!userName.length">UserName:</label>
+        <input type="text" name="userName" [(ngModel)]="userName" class="form-control border-0 border-bottom py-3 mb-3 position-relative" id="userName" placeholder="userName"/>
+   <!-- User Age -->
+   <label for="userAge" class="position-relative top top-0" [class.__top]="!userAge.length">UserAge:</label>
+   <input type="text" name="userAge" Age="userAge" [(ngModel)]="userAge" class="form-control border-0 border-bottom py-3 mb-3 position-relative" id="userAge" placeholder="userAge"/>
+    <!-- User Email -->
+    <label for="userEmail" class="position-relative __top top-0" [class.__top]="!userEmail.length">UserEmail:</label>
+    <input type="text" name="userEmail" Email="userEmail" [(ngModel)]="userEmail" class="form-control border-0 border-bottom py-3 mb-3 position-relative" id="userEmail" placeholder="userEmail"/>  
+     <!-- User Password -->
+     <label for="userPassword" class="position-relative top top-0" [class.__top]="!userPassword.length">UserPassword:</label>
+     <input type="text" name="userPassword" Password="userPassword" [(ngModel)]="userPassword" class="form-control border-0 border-bottom py-3 mb-3 position-relative" id="userPassword" placeholder="userPassword"/>    
+     <button class="btn my-3 text-white btn-color">Send Message</button>
+    </form>
+</section>

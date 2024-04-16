@@ -1,0 +1,20 @@
+<section class="portfolio mt-5">
+    <app-star [title]="'portfolio component'" [customColor]="'#2C3E50'"></app-star>
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" *ngFor="let src of srcs">
+                <div class="portfolio-card rounded-3 overflow-hidden position-relative">
+                    <img [src]="src" alt="port1" class="mw-100">
+                    <div (click)="flag=false ; modelImg=src" class="layer position-absolute start-0 top-0 w-100 h-100  d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus text-white fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div [class.d-none]="flag" (click)="hideModel($event.target , img)" class="mt-5 model position-fixed top-0 start-0 w-100 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+    <img #img [src]="modelImg" alt="">
+</div>
+
+</section>

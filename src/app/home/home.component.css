@@ -1,0 +1,7 @@
+.home{
+    background-color: var(--main-color);
+    padding-top: var(--main-padding-top);
+}
+img{
+    width: 250px;
+}

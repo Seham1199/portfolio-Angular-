@@ -1,0 +1,26 @@
+nav{
+    background-color: var(--second-color);
+    transition: padding 0.6s;
+}
+.active{
+    background: var(--main-color);
+}
+.nav-link:focus-visible ,
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+li{
+    display: block;
+    width: fit-content;
+}
+.navbar-toggler{
+    border-color: #fff;
+}
+li a{
+    padding: 8px;
+}
+@media (max-width:767px) {
+li.nav-item{
+    margin-top: 16px;
+}
+}
